@@ -4,9 +4,10 @@
 var myDiv = document.getElementById("myDiv");
 
 // 1. Prompt the user for the number of math questions to generate. Never give up.
-var pages = Number(window.prompt("How many pages?"));
+var pages = Number(window.prompt("How many question should I generate?"));
 while (isNaN(pages) || pages < 1) {
-   pages = Number(window.prompt("How many pages?"));
+   pages = Number(window.prompt("I can't make a quiz with less than one" + 
+   "question.Please enter a number of quesions that I should generate."));
 }
 
 // 2. Produce the number of questions specified by the user.
