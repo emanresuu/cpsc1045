@@ -17,11 +17,11 @@ function question1() {
 
    if (isPositiveInteger(input1)) {
       output1a.innerHTML = "All multiples of three less than " + input1 + 
-         " :<br>" +array2String(multiplesOfThreeArray);
+         ":<br>" +array2String(multiplesOfThreeArray);
       output1b.innerHTML = "All multiples of five less than " + input1 + 
-         " :<br>" + array2String(multiplesOfFiveArray);
+         ":<br>" + array2String(multiplesOfFiveArray);
       output1c.innerHTML = "The sum of all multiples of three " + 
-         "or five less than " + input1 + " :<br>" + 
+         "or five less than " + input1 + ":<br>" + 
          sumTwoArrays(multiplesOfThreeArray, 
                multiplesOfFiveArray);
    } else {
