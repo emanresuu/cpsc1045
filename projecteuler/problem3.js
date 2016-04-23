@@ -20,7 +20,7 @@ function question3() {
    if (isPositiveInteger(input3)) {
       output3a.innerHTML = "All factors of " + input3 + ":<br>" + 
          array2String(factorsArray);
-      output3b.innerHTML = "All prime numbers less than or equal to " + 
+      output3b.innerHTML = "All prime numbers not more than " + 
          input3 + ":<br>" + array2String(primeNumbersArray);
       output3c.innerHTML = "All prime factors of " + input3 + ":<br>" + 
          array2String(primeFactorsArray);
