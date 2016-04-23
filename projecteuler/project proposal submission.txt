@@ -1,0 +1,39 @@
+This project is a collection of my solutions to Project Euler problems that
+have been squirreled into the mind of a narcisstic, depricating, and painfully 
+conceited chatbot.
+
+
+The chatbot:
+
+   solicits user input in the correct form
+
+   replies with text
+
+   replies with graphics
+
+   does not repeat Itself
+
+   interrupts you as you are typing
+
+
+Here is a Project Euler problem of 5% difficulty:
+
+   Multiples of 3 and 5
+   Problem 1 
+
+   If we list all the natural numbers below 10 that are multiples of 3 or 
+   5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+   Find the sum of all the multiples of 3 or 5 below 1000.
+
+
+Here is a sample of the corresponding chatbot output:
+
+   Chatbot: "Fascinating, you might be interested to know that I can find the 
+   sum of the multiples of 3 and 5 less than any number. Give me a number and 
+   I'll show you."
+
+   Chatbot: Well, I didn't expect you to come up with an interesting number. 
+
+   Chatbot: The solution is 123.
+

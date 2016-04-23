@@ -1,0 +1,61 @@
+1) Why are loops used?
+
+Loops are used instead of explicitly repeating code because they tend to be shorter.
+
+2) Name two types of loops and why they are different. 
+
+Two types of loops are for loops and while loops. 
+For loops perform a known number of repetitions. 
+While loops perform an unknown number of repetitions.
+
+3) What does the following code do?
+
+This code will do nothing because 'number()' was not previously define. If JavaScript was not a case sensitive language, this code would prompt the user for a non negative number until given.
+
+4)For the following loop fill in the table below and state what it draws.
+
+a   x   k
+0   0   0
+2   20  40
+
+This code draws an upside down, increasing bar graph. All bars have width of 5. There is a space of 15 pixels between each bar. The height of bars from left to right are 0, 40, 80, 120, and 160.
+
+5) Fill in the table below for the code below and state what it draws. 
+
+xIdx   yIdx   xoffset   yoffset colour
+ 0      0        0           0
+ 1      1        10          10
+
+This code draws a stairwell going down from left to right. It is made of blue square, all of the same size, attached to each other by their top-right and bottom-left corners. 
+
+6) What is the value of stringTotal and s1 after the loop executes? How will stringTotal be displayed on an HTML page?
+
+After the string executes s1 will have a value of ' **********' and stringTotal will have a value of:
+
+"" + "*"  + "<br>" + 
+     "**"  + "<br>" +
+     "***"  + "<br>" +
+     "****"  + "<br>" +
+     "*****"  + "<br>" +
+     "******"  + "<br>" +
+     "*******"  + "<br>" +
+     "********"  + "<br>" +
+     "*********"  + "<br>" +
+     "**********"  + "<br>"
+
+stringTotal will be displayed on an HTML page as:
+
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+
+

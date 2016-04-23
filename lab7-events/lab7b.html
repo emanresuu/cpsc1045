@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Lab 7 Part B</title>
+   <meta charset = "UTF-8">
+   <script src = "lab7b.js" defer></script>
+</head>
+<body onload = "setup()">
+   <h2>Lab 7b: Parabola Plotter</h2>
+   A parabola is defined by the equation y=ax^2+bx+c, where a is not 
+   equal to zero.<br>The following app will plot the parabola given 
+   the coefficients a, b, and c.
+   <br>a:
+   <input id = "a" type = "text">
+   <br>b:
+   <input id = "b" type = "text"> 
+   <br>c:
+   <input id = "c" type = "text">
+   <br>
+   <input id = "plot" type = "button" value = "plot" onclick = "plot()">
+   <br>
+   <div id = "root1"><br></div>
+   <div id = "root2"><br></div>
+   <canvas id = "canvas"
+      width = "400"
+      height = "400"
+      style = "border-style: solid">
+   </canvas>
+</body>
+</html>
+
+

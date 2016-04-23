@@ -1,0 +1,34 @@
+(1) What is a literal object?
+
+A literal object is defined using JavaScript object notation, rather 
+than a constructor. 
+A literal object is defined using values in their most concrete form. 
+
+(2) What is a constructor?
+
+A constructor is a series of instructions designed to automate the 
+process of creating objects.
+
+(3) Explain the keyword 'this'.
+
+'this' is a keyword that is used in a constructor to attaches methods or 
+parameters to an object that is being defined.
+
+(4) How can you store an object in an array?
+
+Objects can be stored the same way regardless of data type. The code below 
+defines an object and an array, then adds the object to the array. 
+
+var someObject = {};
+var someArray = [];
+someArray.push(someObject);
+
+(5) Write a constructor for the following object:
+
+function createPet(name, species, breed, allergies) {
+   "use strict";
+   this.name = name;
+   this.species = species;
+   this.breed = breed;
+   this.allergies = allergies; 
+}

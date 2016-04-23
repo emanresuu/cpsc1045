@@ -1,0 +1,42 @@
+1) What is an array?
+
+An array is an object containing a series of elements. Each element
+is given a unique index number. The index numbers can be used to call
+and manipulate the elements
+
+2) How do we change the value of an element in an array?
+
+We change the value of an element in an array by assigning a new value
+using the element's index number. e.g.
+
+var anArray = [1, 2, 3];
+anArray[0] = "green";
+anArray; //-> ["green", 2, 3]
+ 
+3) Which methods do we use to add an element to an array.
+
+We use the push method and the method where we assign a value to a missing 
+index.
+
+4) What can an array hold? Can an array hold multiple types at once.
+
+An array can hold each and every JavaScript data type in any combination
+at any one time.
+
+5) Given the following array: ... What is the value of result?
+
+The value of result is "dogdeer".
+
+6) Write a function that accepts an array as input and returns an array
+of all the odd numbers stored in the input array. 
+
+function getOdd(anArray) {
+	"use strict";
+	var oddArray = [];
+	for (var i = 0; i < anArray.length; i = i + 1) {
+		if (anArray[i] % 2 !== 0) {
+			oddArray.push(anArray[i]);
+		}
+	}
+	return oddArray;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lab 10: Eyes on me!</title>
+    <meta charset="UTF-8">
+    <script src="lab10Base.js" defer></script>
+    <script src="lab10.js" defer></script>
+    <style>
+       .renderStack {
+           position:  relative 
+        }
+       .rtx  {  border : 1px solid;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+        }
+    </style>
+</head>
+
+<body onload ="setup()" >
+    <h1>Lab 10: Cursor tracking</h1>
+    <div class="renderStack">
+        <canvas class = "rtx" id="animal" width = "400" height="400"></canvas>
+        <canvas class = "rtx" id="eyes" width = "400" height="400" onmousemove="updateEyes(event)"></canvas>
+    </div>
+</body>

@@ -1,0 +1,169 @@
+﻿1)  What does the term “Cconditional Execution” mean?
+
+Conditional execution is where the order in which statements are executed (the control flow) is split into two; the path that will be followed is determined by the truth value of a boolean expression.[1, p. 29]
+
+truth; conditional execution
+a shrubbery; knights who say ni [2]
+
+2)  For a single if/else pair how many code paths does it have?
+
+A single if/else pair has two code paths. [1, p. 29]
+
+3)  What does the command prompt do, and how do you use it?
+
+The command prompt triggers a dialog window that includes a question, a text box, a Cancel button, and an OK button. 
+
+If the user press OK, any characters that were put into the text box are returned as a string. e.g.
+
+<hello>
+OK
+//->”hello”
+
+<1>
+OK
+//->”1”
+
+<>
+OK
+//-> “” 
+
+If you press Cancel, prompt returs a null value.  e.g.
+
+<hello>
+Cancel
+// ->null
+
+<1>
+Cancel
+//->”1”
+
+<>
+Cancel
+//->null
+ 
+Using 
+To use prompt use the following form below. 
+
+window.prompt(“Some kind of inquiry”);[3]
+
+4)  What is the purpose of the isNaN command?
+
+The isNaN command is used to identify when a value is the special number type: not a number (NaN). This is useful because NaN, unlike all other values in JavaScript, is not equal to itself.[1, p. 17]
+
+5) Write a JavaScript snippet to check that
+• Accepts input from the user
+• Tries converts it to a number
+• Check if the user entered a number
+
+var stuff window.prompt(“How many cookies can you eat?”);
+if(isNaNNumber(var) {
+	window.alert(“Please enter a number.”)
+}
+
+6) For the following code block assume x,y,z exists.
+if(!isNaN(x) && !isNaN(y) && !isNaN(y) ){ 
+	if(x < 0){
+		alert("Snowbird");
+	} else if(Math.pow(x,2)+Math.pow(y,2)+Math.pow(z,2) <=1){
+		alert("goose egg");
+	} else if(Math.pow(x,2)+Math.pow(y,2)+Math.pow(z,2) >1 ){
+		alert("Blue Angel"); } else {
+		alert("Maverick"); }
+}
+
+Will the line alert(“Maverick”) ever execute? Why or why not?
+When will the line alert(“goose egg”) execute?
+For a single pass of the code snippet, what is the maximum and minimum number of alert statements that will be executed.
+
+The line alert("Maverick"); } will never run because there a power is defined for all real numbers greater than one; all other possible cases will result in other outputs. 
+
+The line alert(“goose egg”) will execute whenever the sum of the squares of the three variables is less than or equal to 1. 
+
+The minimum number of alert statements that will be executed is one.
+
+The maximum number of alert statements that will be executed is .
+
+
+
+7) What is the difference between the pages created with each code path?
+filename: IC7.html
+
+<!DOCTYPE html> 
+<head>
+	<title>Possible pages</title>
+	<meta charset="UTF-8">
+	<script src="IC7.js" defer></script>
+</head>
+<body>
+	<h1>Nothing important</h1>
+	<div id="output"></div> 
+</body>
+
+filename:IC7.js
+var userName = prompt("What is your name?"); 
+var output = document.getElementById("output");
+
+if(userName >= "Donald Trump"){
+	output.innerHTML = userName+":You are richer" + " than Donald Trump!";
+} else {
+	output.innerHTML = "No one is as rich as Donald Trump!";
+}
+
+The difference between the pages created with each code path is the text message that is desplayed. In one case the text message will be the string that was entered by the user concatinated with 'You are richer than Donald Trump!'. In the other case the text message will be '"No one is as rich as Donald Trump!"'.
+
+
+8)Write a simple application using prompt for a local coffee company named MoonDollars and calculate the price.
+1) Ask the user for:
+1. The size of the drink
+a. Regular: $2.00 b. Medium: $2.50 c. Large: $3.50
+2. Type of coffee
+a. Espresso based: add $1.00 b. Drip coffee: no change
+c. Siphon coffee: add $2.00
+2) Display the coffee order and price in the body of the HTML page.
+
+filename: moondollars.html
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Moon Dollars</title>
+   <meta charset="UTF-8">
+   <script src="moondollars.js" defer></script>
+</head>
+<body>
+   <div id=coffee></div>
+</body>
+</html>
+
+filename: moondollars.js
+var coffee = document.getElementById("coffee");
+var size = window.prompt("Will you have a Regular, Medium, or Large coffee?");
+var type = window.prompt("Will you have Espresso based, "
+                         + "Drip coffee, or Siphon coffee?");
+var costs;  // the cost due to size
+var costt;  // the cost due to type
+
+if (size === "Regular") {  // assign the costdue to size
+   costs = 2;
+}
+if (size === "Medium") {
+   costs = 2.5;
+}
+if (size === "Large") {
+   costs = 3.5;
+}   
+if (type === "Espresso based") {  // assign the cost due to type
+   costt = 1;
+}
+if (type === "Drip coffee") {
+   costt = 0;
+}
+if (type === "Siphon coffee") {
+   costt = 2;
+}
+coffee.innerHTML = "The " + size + " " + type + " costs $" + (costs + costt);
+
+Works Cited
+[1]	M. Haverbeke, Eloquent JavaScript: a modern introduction to programming. San Francisco: No Starch Press, 2015.
+[2]	T. Gilliam and T. Jones, Monty Python and the Holy Grail. 1975.
+[3]	“JavaScript Popup Boxes.” [Online]. Available: http://www.w3schools.com/js/js_popup.asp. [Accessed: 31-Jan-2016].
+

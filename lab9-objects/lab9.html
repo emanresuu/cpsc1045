@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Lab 9</title>
+   <meta charset="UTF-8">
+   <script src="lab9.js" defer></script>
+</head>
+<body>
+   <h2>Tea House</h2> 
+  
+   Tea 
+   <select autofocus id="teaType">
+      <option>Black</option>
+      <option>Green</option>
+      <option>Red</option>
+   </select>
+   <br>
+   <br>
+
+   Topping
+   <select id="topping">
+      <option>Grass Jelly</option>
+      <option>Coconut</option>
+      <option>Pearls</option>
+      <option>Mango Stars</option>
+   </select>
+   <p> 
+   <input type="button" value="Add Topping" onclick="addTopping()">
+   <input type="button" value="Remove Toppings" onclick="removeToppings()">
+   </p>
+   
+   Current Toppings:
+   <ul id="currentToppings"></ul>
+   <br>
+
+   Milk 
+   <select id="milk">
+      <option>Yes</option>
+      <option>No</option>
+   </select>
+   <br><br>
+  
+   <h2>Your Order</h2>
+
+   <input type="button" value="addDrink" onclick="addDrink()"> 
+   <input type="button" value="remove" onclick="removeLastItemAdded()"> 
+   <input type="button" value="reset" onclick="resetOrderTable()"> 
+   
+   <table id="orderTable">
+   </table>
+</body>
+</html>
